@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap");
+::before, ::after, * {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  color: hsl(223, 87%, 63%);
+  background-color: #fff;
+}
+
+a:hover {
+  color: hsla(223, 87%, 63%, 0.8);
+}
+
+a:hover, .btn:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:hover, #submitEmailBtn:hover {
+  background-color: hsla(223, 87%, 63%, 0.8);
+}
+
+.btn, #submitEmailBtn {
+  background-color: hsl(223, 87%, 63%);
+  color: #fff;
+  border: none;
+  margin-bottom: 4.5rem;
+}
+
+.btn.error {
+  margin-bottom: 2.25rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  font-size: 11px;
+}
+
+body {
+  min-height: 100vh;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.container {
+  max-width: 86%;
+  padding-block: 80px 35px;
+}
+
+.header__logo {
+  padding-bottom: 2rem;
+}
+
+.header > h1 {
+  color: hsl(0, 0%, 59%);
+  font-weight: 300;
+  padding-bottom: 1rem;
+  font-size: 1.75rem;
+}
+
+.header > h1 > span {
+  color: hsl(209, 33%, 12%);
+  font-weight: 700;
+}
+
+.header > p {
+  color: hsl(209, 33%, 12%);
+  padding-bottom: 2rem;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.input.wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+input {
+  outline: none;
+  border: 1px solid hsl(223, 100%, 88%);
+  margin-bottom: 0.6rem;
+  width: 100%;
+}
+
+input, .btn {
+  padding: 0.75rem 2.5rem;
+  border-radius: 2rem;
+  font-weight: 600;
+}
+
+input::-webkit-input-placeholder {
+  color: hsl(223, 100%, 88%);
+  opacity: 1; /* Firefox */
+}
+
+input::-moz-placeholder {
+  color: hsl(223, 100%, 88%);
+  opacity: 1; /* Firefox */
+}
+
+input:-ms-input-placeholder {
+  color: hsl(223, 100%, 88%);
+  opacity: 1; /* Firefox */
+}
+
+input::-ms-input-placeholder {
+  color: hsl(223, 100%, 88%);
+  opacity: 1; /* Firefox */
+}
+
+input::placeholder {
+  color: hsl(223, 100%, 88%);
+  opacity: 1; /* Firefox */
+}
+
+input::-ms-input-placeholder { /* Edge 12 -18 */
+  color: hsl(223, 100%, 88%);
+}
+
+.form .error {
+  display: none;
+  font-style: italic;
+}
+
+.form.red .error {
+  display: block;
+  border-color: hsl(354, 100%, 66%);
+  color: hsl(354, 100%, 66%);
+}
+
+.form.red input {
+  border-color: hsl(354, 100%, 66%);
+}
+
+.form.green input {
+  border-color: hsl(223, 87%, 63%);
+}
+
+.form.green .error {
+  display: block;
+  color: hsl(223, 87%, 63%);
+}
+
+.form.red .btn, .form.green .btn {
+  margin: 2rem 0 2rem 0;
+}
+
+.img__dash {
+  margin-bottom: 7.5rem;
+}
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 30px;
+}
+
+.links > a + a {
+  margin-left: 10px;
+}
+
+.links > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 50%;
+  border: 1px solid hsl(223, 100%, 88%);
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+@media (min-width: 800px) {
+  body {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container {
+    width: 40.5rem;
+  }
+  .header > h1 {
+    font-size: 42px;
+  }
+  p {
+    font-size: 20px;
+  }
+  input, .btn, .error {
+    font-size: 16px;
+    padding: 22px;
+    border-radius: 2rem 2rem;
+  }
+  form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  input.wrapper {
+    width: 68%;
+  }
+  form .btn {
+    width: 30%;
+    border: 1px solid hsl(223, 100%, 88%);
+    margin-left: 5px;
+    margin-top: 0;
+  }
+  input, .btn {
+    border-radius: 2rem;
+  }
+  .form.red .btn, .form.green .btn {
+    margin: 0;
+  }
+  .form .error {
+    display: none;
+    font-style: italic;
+    text-align: start;
+    padding-top: 0;
+    padding-bottom: 3rem;
+  }
+}
