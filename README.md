@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution [Add solution URL here]
-- Live Site [Add live site URL here]
+- [Solution](https://teal-frangipane-0f4f29.netlify.app/)
+- [Live Site](https://teal-frangipane-0f4f29.netlify.app/)
 
 ## My process
 
